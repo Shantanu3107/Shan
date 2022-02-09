@@ -5,3 +5,4 @@
 [Github with VS code.pdf](https://github.com/Shantanu3107/m1_Matrix_Operations_Utility/files/8035576/Github.with.VS.code.pdf)
 
 * screenshot of hackerearth points
+[Hackerearth  1000 points.pdf](https://github.com/Shantanu3107/m1_Matrix_Operations_Utility/files/8035589/Hackerearth.1000.points.pdf)
