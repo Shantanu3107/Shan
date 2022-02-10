@@ -46,7 +46,18 @@ This program can be executed in a system which has Linux or Windows operating sy
 
 ## HIGH LEVEL REQUIERMENT
 
+|  |Description|Category|Status|
+|--|--|--|--|
+|01|User shall be able to specify the size of the matrix|Technical|IMPLEMENTED|
+|02|User shall be able to add the matrices|Techincal|IMPLEMENTED|
+|03|User shall be able to subtract the matrices|Techincal|IMPLEMENTED|
+|04|User shall be able to multiply the matrices|Techincal|IMPLEMENTED|
+|05|User shall be able to find determinant, transpose and inverse of a matrix|Techincal	|IMPLEMENTED|
+
+
 ## LOW LEVEL REQUIERMENT
+
+
 
 
 
