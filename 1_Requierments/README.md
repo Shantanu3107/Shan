@@ -51,8 +51,7 @@ This program can be executed in a system which has Linux or Windows operating sy
 |01|User shall be able to specify the size of the matrix|Technical|IMPLEMENTED|
 |02|User shall be able to add the matrices|Techincal|IMPLEMENTED|
 |03|User shall be able to subtract the matrices|Techincal|IMPLEMENTED|
-|04|User shall be able to multiply the matrices|Techincal|IMPLEMENTED|
-|05|User shall be able to find determinant, transpose and inverse of a matrix|Techincal	|IMPLEMENTED|
+|04|User shall be able to find  transpose of matrix|Techincal	|IMPLEMENTED|
 
 
 ## LOW LEVEL REQUIERMENT
@@ -62,10 +61,7 @@ This program can be executed in a system which has Linux or Windows operating sy
 |01|(1). User must specify the size of the matrix. (2). The size specified is the dimensions of the square matrix|IMPLEMENTED|
 |02|Addition of two matrices can be done (1). Both the matrices need to be of same size(2). The size entered in the begining is same for both the matrices|IMPLEMENTED|
 |03|Subtraction of two matrices is implemented in the same manner as addition|IMPLEMENTED|
-|04|Multiplication of two matrices is done on two square matrices of a specified size|IMPLEMENTED|
-|05|The determinant of a single matrix of a specified size is implemented|IMPLEMENTED|
-|06|The transpose of a single matrix operation is implemented|IMPLEMENTED|
-|07|To find the inverse of a matrix, both the determinant function and the transpose functions are used in it. The condition that a matrix is invertible is to check if the determinant of the matrix is equal to 0.|IMPLEMENTED|
+|04|The transpose of a single matrix operation is implemented|IMPLEMENTED|
 
 
 
