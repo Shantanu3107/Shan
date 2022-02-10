@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#ifndef CALC_H_INCLUDED
-#define CLAC_H_INCLUDED
+#ifndef MATRIX_OPERATION_
+#define MATRIX_OPERATION_
 
 //int **matrix;
 //int *rows;

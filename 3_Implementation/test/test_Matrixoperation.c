@@ -1,4 +1,4 @@
-#include "calc.c"
+#include "../src/Matrixoperation.c"
 
 int main() {
   int choice,rows,cols = 0;

@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "../inc/MatrixOperation.h"
 
 float **createMatrix(float **matrix, int rows, int cols){
   int r, c;
