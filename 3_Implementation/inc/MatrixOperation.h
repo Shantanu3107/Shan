@@ -74,22 +74,6 @@ error_t add_matrices(float **matrix1,float **matrix2,int n);
  * @return error_t 
  */
 error_t subtract_matrices(float **matrix1,float **matrix2, int n);
-/**
- * @brief To find the product of the matrices
- * 
- * @param matrix1 
- * @param matrix2 
- * @param n 
- * @return error_t
- */
-error_t product_matrices(float **matrix1,float **matrix2, int n);
-/**
- * @brief To find the determinant of the matrix
- * 
- * @param matrix 
- * @return float 
- */
-float determinant(float **matrix,int k);
 
 /**
  * @brief To find the transpose of a matrix
@@ -99,24 +83,5 @@ float determinant(float **matrix,int k);
  * @return error_t
  */
 error_t transpose(float **matrix,int n);
-
-/**
- * @brief To find the inverse of a matrix
- * 
- * @param num 
- * @param f 
- * @return error_t 
- */
-error_t inverse(float **num, int f);
-
-/**
- * @brief Power of minus one
- * 
- * @param exp 
- * @return float 
- */
-float power(int exp);
-
-
 
 #endif  /* #define _MATRIX_OPERATIONS_H_ *-------------
