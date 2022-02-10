@@ -84,4 +84,4 @@ error_t subtract_matrices(float **matrix1,float **matrix2, int n);
  */
 error_t transpose(float **matrix,int n);
 
-#endif  /* #define _MATRIX_OPERATIONS_H_ *-------------
+#endif  /* #define _MATRIX_OPERATIONS_H_ */
