@@ -1,157 +1,87 @@
-#include "matrix_operations.h"
+#include "calc.h"
 
-
-/**
- * @brief This function frees the dynamically allocated memory in the structure
- * 
- * @parameter m 
- */
-void free_matrix_structure(mat *m){
-    free(m->matrix_1);
-    free(m->matrix_2);
-}
-
-/**
- * @brief A function to dynamically allocate the memory for the matrix
- * 
- * @parameter matrix 
- * @parameter n 
- */
-void dynamic_mat_allocation(float **matrix,int n){
-    matrix = (float **)calloc(n,sizeof(float));
-    for(int i=0;i<n;i++){
-        matrix[i] = (float *)calloc(n,sizeof(float));
-    }
-}
-
-
-
-/**
- * @brief A function to allocate memory and input the matrix elements
- * 
- * @parameter matrix 
- * @parameter n 
- * @return float** 
- */
-float ** alloc_input_matrix(float **matrix,int n){
-    int i,j;
-    matrix = (float **)calloc(n,sizeof(float));
-    for(i=0;i<n;i++){
-        matrix[i] = (float *)calloc(n,sizeof(float));
-    }
-
-    float element;
-    printf("Enter the matrix: \n");
-    for(i = 0; i < n; i++){
-        for(j = 0; j < n; j++){
-            scanf("%f", &element);
-            matrix[i][j]= element;
+float **createMatrix(float **matrix, int rows, int cols){
+  int r, c;
+  for(r = 0; r < rows; r++){
+    matrix[r] = malloc(cols * sizeof(float));
+    if(!matrix[r]){
+      if(r > 1){
+        int i;
+        for(i = 0; i < r; i++){
+          free(matrix[i]);
         }
+      }
+      free(matrix[r]);
+      break;
     }
-    return matrix;
+  }
+  return matrix;
 }
 
-/**
- * @brief A function to output the matrix
- * 
- * @parameter matrix 
- * @parameter n 
- */
-
-void output_matrix(float **matrix,int n){
-    int i,j;
-    float x;
-    for(i = 0; i < n; i++){
-        for(j = 0; j < n; j++){
-            //x = **(matrix + i*n + j);
-            printf("%f ", matrix[i][j]);
-        }
-        printf("\n");
+float **fillMatrix(float **matrix, int rows, int cols){
+  int r, c;
+  float entry;
+  for(r = 0; r < rows; r++){
+    for(c = 0; c < cols; c++){
+      printf("Entry for Row: %i , Column: %i\n", r + 1, c + 1);
+      scanf("%f", &entry);
+      matrix[r][c] = entry;
     }
-    printf("\n\n\n");
+  }
+  return matrix;
 }
 
-
-/**
- * @brief A function to add two matrices
- * 
- * @parameter matrix1 
- * @parameter matrix2 
- * @parameter n 
- * @return error_t 
- */
-error_t add_matrices(float **matrix1,float **matrix2, int n){
-    int i,j;
-    float **result;
-
-    result = (float **)calloc(n,sizeof(float));
-    for(int i=0;i<n;i++){
-        result[i] = (float *)calloc(n,sizeof(float));
+void printMatrix(float **matrix, int rows, int  cols){
+  int r,c;
+  for(r = 0; r < rows; r++){
+    printf("[ ");
+    for(c = 0; c < cols; c++){
+      printf("%f ", matrix[r][c]);
     }
-    for(i = 0; i < n; i++){
-        for(j = 0; j < n; j++){
-            result[i][j] = matrix1[i][j] + matrix2[i][j];
-        }
-    }
-
-    printf("The sum of the matrices is: \n");
-    output_matrix(result,n);
-    free(result);
-    return SUCCESS;
-
+    printf("] \n");
+  }
 }
 
-/**
- * @brief A function to subtract 2 matrices
- * 
- * @parameter matrix1 
- * @parameter matrix2 
- * @parameter n 
- * @return error_t 
- */
-error_t subtract_matrices(float **matrix1,float **matrix2, int n){
-    int i,j;
-    float **result;
-    result = (float **)calloc(n,sizeof(float));
-    for(int i=0;i<n;i++){
-        result[i] = (float *)calloc(n,sizeof(float));
-    }
-    for(i = 0; i < n; i++){
-        for(j = 0; j < n; j++){
-            result[i][j] = matrix1[i][j] - matrix2[i][j];
-        }
-    }
-    printf("The difference of the matrices is: \n");
-    output_matrix(result,n);
-    free(result);
-    return SUCCESS;
+void desrtroyMatrix(float **matrix, int rows, int cols){
+  int r;
+  for(r = 0; r < rows; r++){
+      free(matrix[r]);
+  }
+  free(matrix);
 }
-/**
- * @brief A function to find the transpose of a matrix
- * 
- * @parameter matrix 
- * @parameter n 
- * @return error_t 
- */
-error_t transpose(float **matrix,int n){
-    float **result;
-    int i,j;
-    result = (float **)calloc(n,sizeof(float));
-    for(int i=0;i<n;i++){
-        result[i] = (float *)calloc(n,sizeof(float));
-    }
-    for (i = 0;i < n; i++)
-    {
-     for (j = 0;j < n; j++)
-       {
-         result[i][j] = matrix[j][i];
-        }
-    }
 
-    printf("The Transpose of the matrix is: \n");
-    output_matrix(result,n);
-    free(result);
-    return SUCCESS;
-    
+void rowMult(float **matrix, int rows, int cols, int numRow, float num){
+  int c;
+  for(c = 0; c < cols; c++){
+    float temp = matrix[numRow - 1][c];
+    matrix[numRow - 1][c] = temp * num;
+  }
+}
+
+void rowAdd(float **matrix, int rows, int cols, int addRow1, int addRow2, int numRow){
+  int c;
+  for(c = 0; c < cols; c++){
+    matrix[numRow - 1][c] = matrix[addRow1 - 1][c] + matrix[addRow2 - 1][c];
+  }
+}
+
+void rowSwap(float **matrix, int rows, int cols, int swapRow1, int swapRow2){
+  int c;
+  float temp[cols];
+  for(c = 0; c < cols; c++){
+    temp[c] = matrix[swapRow1 - 1][c];
+    matrix[swapRow1 - 1][c] = matrix[swapRow2 - 1][c];
+    matrix[swapRow2 - 1][c] = temp[c];
+  }
+}
+
+void printMenu() {
+  printf("Welcome to your Matrix calculator please type the number of the option you want and hit enter\n");
+  printf("1. Create matrix and enter in values\n");
+  printf("2. Print matrix\n");
+  printf("3. Multiply a row by a number\n");
+  printf("4. Add one row to another and replace a row\n");
+  printf("5. Swap rows\n");
+  printf("6. Exit\n");
 }
 
