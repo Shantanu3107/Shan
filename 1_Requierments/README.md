@@ -59,7 +59,7 @@ This program can be executed in a system which has Linux or Windows operating sy
 |  |Description|Category|Status|
 |--|--|--|--|
 |01|User shall be able to specify the size of the matrix|Technical|IMPLEMENTED|
-|02|User shall be able to find  transpose of matrix|Techincal	|IMPLEMENTED|
+|02|User shall be able to find inverse of matrix|Techincal	|IMPLEMENTED|
 
 
 ## LOW LEVEL REQUIERMENT
@@ -67,7 +67,7 @@ This program can be executed in a system which has Linux or Windows operating sy
 |  |Description|Status|
 |--|--|--|
 |01|(1). User must specify the size of the matrix. (2). The size specified is the dimensions of the square matrix|IMPLEMENTED|
-|02|The transpose of a single matrix operation is implemented|IMPLEMENTED|
+|02|The inverse of a single matrix operation is implemented|IMPLEMENTED|
 
 
 

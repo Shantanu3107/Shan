@@ -2,7 +2,7 @@
 
 |  |Description|EXP I/P|EXP O/P|Actual output|Type of test|
 |--|--|--|--|--|--|
-|01|tested swaping of rows|matrix1,n|SUCCESS|SUCCESS|TECHNICAL|
+|01|tested on inverse of matrix|matrix1,n|SUCCESS|SUCCESS|TECHNICAL|
 
 
 ## Low level test plan
