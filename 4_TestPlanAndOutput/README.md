@@ -9,6 +9,6 @@
 
 |  |Description|EXP IN|EXP OUT|Actual Out|Types of test list|
 |--|--|--|--|--|--|
-|01|Tested on function which acceptssingle matrix as input|matrix1,n|SUCCESS|SUCCESS|TECHNICAL|
+|01|Tested on function which accept single matrix as input|matrix1,n|SUCCESS|SUCCESS|TECHNICAL|
 
 
