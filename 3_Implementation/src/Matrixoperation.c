@@ -1,3 +1,13 @@
+/**
+ * @file Matrixoperation.c
+ * @author Shantanu
+ * @brief This is the source code which contains all the functions for the project
+ * @version 0.1
+ * @date 2022-02-11
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "../inc/MatrixOperation.h"
 
 float **createMatrix(float **matrix, int rows, int cols){
