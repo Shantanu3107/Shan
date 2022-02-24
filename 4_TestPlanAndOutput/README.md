@@ -13,13 +13,13 @@ High Level Test Plan
 
 |  |Description|EXP I/P|EXP O/P|Actual output|Type of test|
 |--|--|--|--|--|--|
-|01|Tested on inverse of matrix|matrix1,n|SUCCESS|SUCCESS|TECHNICAL|
+|01|Tested on inverse of matrix|matrix1,n|SUCCESS|SUCCESS|Manual testing|
 
 
 ## Low level test plan
 
 |  |Description|EXP IN|EXP OUT|Actual Out|Types of test list|
 |--|--|--|--|--|--|
-|01|Tested on function which accept single matrix as input|matrix1,n|SUCCESS|SUCCESS|TECHNICAL|
+|01|Tested on function which accept single matrix as input|matrix1,n|SUCCESS|SUCCESS|Manual testing|
 
 
