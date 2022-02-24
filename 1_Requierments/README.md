@@ -59,7 +59,10 @@ This program can be executed in a system which has Linux or Windows operating sy
 |  |Description|Category|Status|
 |--|--|--|--|
 |01|User shall be able to specify the size of the matrix|Technical|IMPLEMENTED|
-|02|User shall be able to find inverse of matrix|Techincal	|IMPLEMENTED|
+|02|User shall be able to print the matrix|Technical|IMPLEMENTED|
+|03|User shall be able to multiply a row by number|Technical |IMPLEMENTED|
+|04|User shall be able to add one row to another and replace a row|Technical|IMPLEMENTED|
+|05|User shall be able to swap the rowws|Techincal	|IMPLEMENTED|
 
 
 ## LOW LEVEL REQUIERMENT
