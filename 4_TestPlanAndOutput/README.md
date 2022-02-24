@@ -1,3 +1,14 @@
+## Test plan
+*For every feature,define a test case
+*How to run that feature
+*Define expected behaviour
+*Capture the actual result
+
+## Table
+ID,description of test case,input values,expected output and actual output
+High Level Test Plan
+
+
 ## High level test plan
 
 |  |Description|EXP I/P|EXP O/P|Actual output|Type of test|
