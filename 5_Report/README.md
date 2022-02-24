@@ -51,6 +51,9 @@ Students and employees  all over the world.
 ## How
 This program can be executed in a system which has Linux or Windows operating system.
 
+## Input
+![Input ](https://user-images.githubusercontent.com/98769359/155468462-4da610e9-13d0-4447-b359-11f1fea84f9a.png)
+
 
 ## Output
 
