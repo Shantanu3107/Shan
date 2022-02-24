@@ -67,10 +67,10 @@ This program can be executed in a system which has Linux or Windows operating sy
 
 ## LOW LEVEL REQUIERMENT
 
-|ID  |Description|Status|
-|--|--|--|
-|LR01|(1). User must specify the size of the matrix. (2). The size specified is the dimensions of the square matrix|IMPLEMENTED|
-|LR02|The inverse of a single matrix operation is implemented|IMPLEMENTED|
+|ID  |Description|Category|Status|
+|--|--|--|--|
+|LR01|(1). User must specify the size of the matrix. (2). The size specified is the dimensions of the square matrix|Technical|IMPLEMENTED|
+|LR02|The swaped rows must be displayed|Technical|IMPLEMENTED|
 
 
 
