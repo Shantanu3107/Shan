@@ -2,7 +2,7 @@
 #<TAB>commands
 
 PROJ_NAME=Matrixoperation
-SRC=src/Matrixoperation.c src/Matrixoperation.c src/unity.c
+SRC=src/main.c Matrixoperation.c src/Matrixoperation.c src/unity.c
 
 #To check if the OS is windows or linux and set the exceutable file extension and delete command accordingly
  ifdef  OS
