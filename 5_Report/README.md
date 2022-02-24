@@ -1,5 +1,49 @@
 
+                     PROJECT REPORT
 
+ ## Project Name : Calculator
+
+   ##  Contents
+1.	Certificates
+2.	Requirements
+3.	 Architecture
+4.	Implementation
+5.	TestPlanAndOutput
+6.	Report
+7.	Refrences
+8.	ImageAndVideo
+
+*	Certificates:
+o	Sololearn
+o	Cisco NDG linux
+o	Screenshot of github learning
+o	Screenshot of hackerearth points
+
+*	Requirements
+o	Requirements
+o	High Level Requirements
+o	Low Level Requirements
+o	SWOT
+o	4W's and 1H's
+
+* Architecture
+o Flowchart
+
+* Implementation
+         
+o	 Inc
+o	 Src
+o	 Test
+o	Unity
+
+* Report
+
+* Refrences
+
+* Images and videos
+o Input and output
+ 
+ 
 ## Matrix Operations
 
 
