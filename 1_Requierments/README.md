@@ -56,21 +56,21 @@ This program can be executed in a system which has Linux or Windows operating sy
 
 ## HIGH LEVEL REQUIERMENT
 
-|  |Description|Category|Status|
+| ID |Description|Category|Status|
 |--|--|--|--|
-|01|User shall be able to specify the size of the matrix|Technical|IMPLEMENTED|
-|02|User shall be able to print the matrix|Technical|IMPLEMENTED|
-|03|User shall be able to multiply a row by number|Technical |IMPLEMENTED|
-|04|User shall be able to add one row to another and replace a row|Technical|IMPLEMENTED|
-|05|User shall be able to swap the rowws|Techincal	|IMPLEMENTED|
+|HR01|User shall be able to specify the size of the matrix|Technical|IMPLEMENTED|
+|HR02|User shall be able to print the matrix|Technical|IMPLEMENTED|
+|HR03|User shall be able to multiply a row by number|Technical |IMPLEMENTED|
+|HR04|User shall be able to add one row to another and replace a row|Technical|IMPLEMENTED|
+|HR05|User shall be able to swap the rowws|Techincal	|IMPLEMENTED|
 
 
 ## LOW LEVEL REQUIERMENT
 
-|  |Description|Status|
+|ID  |Description|Status|
 |--|--|--|
-|01|(1). User must specify the size of the matrix. (2). The size specified is the dimensions of the square matrix|IMPLEMENTED|
-|02|The inverse of a single matrix operation is implemented|IMPLEMENTED|
+|LR01|(1). User must specify the size of the matrix. (2). The size specified is the dimensions of the square matrix|IMPLEMENTED|
+|LR02|The inverse of a single matrix operation is implemented|IMPLEMENTED|
 
 
 
